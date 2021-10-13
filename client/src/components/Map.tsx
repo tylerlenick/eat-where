@@ -1,8 +1,6 @@
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import { useState, useEffect, useCallback } from 'react';
-
-
-
+import {MAPS_KEY} from './config.js'
 
 export const Map = (longitude: any, latitude: any) => {
     const containerStyle = {
@@ -17,7 +15,7 @@ export const Map = (longitude: any, latitude: any) => {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "YOUR_KEY"
+        googleMapsApiKey: MAPS_KEY
       })
     
     const [map, setMap] = useState(null)
