@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Map } from './Map';
+import { Restaurant } from './Restaurant';
 
 export const Body = () => {
     const [latitude, setLatitude] = useState(0);
@@ -18,6 +19,7 @@ export const Body = () => {
     return (
         <div>
             <Map longitude={longitude} latitude={latitude}/> 
+            <Restaurant/>
         </div>
     )
 }

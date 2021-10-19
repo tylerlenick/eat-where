@@ -6,11 +6,11 @@ export const Navbar = () => {
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-left justify-between md:justify-left">
                     <a
                     className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-                    href="#">
+                    href="/">
                     Eat Where
                     </a>
                     <nav className="md:mr-1 md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700flex flex-wrap items-right text-right justify-end">
-                        <a href="#" className="mr-5 hover:text-white">
+                        <a href="/" className="mr-5 hover:text-white">
                             Home
                         </a>
                     </nav>

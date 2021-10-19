@@ -1,5 +1,5 @@
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import {MAPS_KEY} from './config.js'
 
 export const Map = (longitude: any, latitude: any) => {

@@ -1,6 +1,6 @@
 import { Navbar } from './components/Navbar';
 import { Body } from './components/Body';
-import { useState, useEffect } from 'react';
+//import { useState, useEffect } from 'react';
 
 function App() {
   return (
