@@ -17,12 +17,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/yelp', (req, res) => {
-    //res.send(req.query)
-    //const yelp_url = process.env.YELP_BASE_URL
-    //const api_res = await fetch(yelp_url)
-    //const json = await api_res.json();
-    //res.json(json)
-    axios.get('https://api.yelp.com/v3/businesses/north-india-restaurant-san-francisco', {
+    const results = axios.get('https://api.yelp.com/v3/businesses/pizza-atlanta', {
         params: {
             Authorization: `Bearer ${process.env.YELP_TOKEN}`,
             Origin: 'localhost',
@@ -33,6 +28,8 @@ app.get('/yelp', (req, res) => {
     }).catch(error => {
         console.log(error);
     });
+
+    return results;
 })
 
 app.get('/map', (req, res) => {

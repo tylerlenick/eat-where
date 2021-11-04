@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { Map } from './Map';
 import { Restaurant } from './Restaurant';
 
@@ -8,17 +8,7 @@ export const Body = () => {
         longitude: 0,
         latitude: 0
     });
-    //const [longitude, setLongitude] = useState(0);
-
-    /*useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.watchPosition(function(position) {
-                setLatitude(position.coords.latitude);
-                setLongitude(position.coords.longitude);
-            });
-        }
-    }, [latitude, longitude]);*/
-
+    
     const getCoordinates = useCallback(function callback() {
         navigator.geolocation.watchPosition(function(position) {
             setCoordinates({
@@ -35,7 +25,6 @@ export const Body = () => {
         }).then(function (response) {
             console.log(response);
         });
-
     }, [])
 
     return (
