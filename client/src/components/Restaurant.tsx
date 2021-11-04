@@ -1,11 +1,17 @@
-import React from 'react'
-import { Button } from './Button'
+import { FC } from 'react'
+//import { useRestaurantSearch } from '../hooks/yelp-api/useRestaurantSearch'
 
-export const Restaurant = () => {
+interface location {
+    longitude: number,
+    latitude: number
+}
+
+export const Restaurant:FC<location> = (location) => {
+    //const [restaurant, searchParams, setSearchParams] = useRestaurantSearch(location)
+
     return (
         <div>
             Restaurant Here
-            <Button textCopy={'Click'}/>
         </div>
     )
 }

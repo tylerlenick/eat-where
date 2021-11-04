@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+/*import {useState, useEffect} from 'react'
 import * as api from './api'
 
 export const useRestaurantSearch = (location:object) => {
@@ -17,5 +17,5 @@ export const useRestaurantSearch = (location:object) => {
         }
         fetchData();
     }, [searchParams])
-    return [restaurant, searchParams]
-}
+    return [restaurant, searchParams, setSearchParams]
+}*/export{}
